@@ -1,5 +1,5 @@
 module.exports =function(grunt){
-    grunt.registerTask('test_mocha', 'is a snappy bitch',function(){
+    grunt.registerTask('default', 'an exemplary verbose default',function(){
         grunt.log.writeln('This grunt is NOT a happy person.');
     });
 };
