@@ -1,6 +1,6 @@
 # Reference Project
 
-##task
+## task
 Completing 2 of 4 KATAS in a TDD-way in javascript
 
 * http://ccd-school.de/coding-dojo/function-katas/from-roman-numerals/
@@ -10,51 +10,70 @@ Completing 2 of 4 KATAS in a TDD-way in javascript
 
 I chose the first two Katas.
 
-##important points of code
-####banking-OCR 
+## important points of code
+
+#### banking-OCR 
+
 https://bitbucket.org/benbened/reference/src/60a8b5e301848d1b3ede3cbb4af412fa0540cb0e/_src/js/modules/bankOCR.js?at=master&fileviewer=file-view-default
-####banking-OCR test
+
+#### banking-OCR test
+
 https://bitbucket.org/benbened/reference/src/60a8b5e301848d1b3ede3cbb4af412fa0540cb0e/_src/tests/ocr-mocha-cli.js?at=master&fileviewer=file-view-default
-####roman numerals
+
+#### roman numerals
+
 https://bitbucket.org/benbened/reference/src/60a8b5e301848d1b3ede3cbb4af412fa0540cb0e/_src/js/modules/roman_numerals.js?at=master&fileviewer=file-view-default
-####roman numerals test
+
+#### roman numerals test
+
 https://bitbucket.org/benbened/reference/src/60a8b5e301848d1b3ede3cbb4af412fa0540cb0e/_src/tests/roman_numerals-mocha-cli.js?at=master&fileviewer=file-view-default
-####simple frontend
+
+#### simple frontend
+
 https://bitbucket.org/benbened/reference/src/60a8b5e301848d1b3ede3cbb4af412fa0540cb0e/app/index.html?at=master&fileviewer=file-view-default
 
 
-##dependencies
+## dependencies
+
 for the full frontend-stack:
-####Node.js und NPM
+
+#### Node.js und NPM
+
 [https://nodejs.org/en/]
-####Rubyinstaller 
+
+#### Rubyinstaller 
+
 [https://rubyinstaller.org/downloads/]
-####Jekyll
+
+#### Jekyll
+
 a ruby bundler used by bootstrap
  
 `gem install jekyll bundler`
-####Grunt
+
+#### Grunt
+
 taskrunner for tests and frontend 
 
 `npm install -g grunt-cli`
-####SASS
+#### SASS
 CSS-preprocessor using ruby
 
 `npm install -g sass`
-####http-server
+#### http-server
 a lightweight http-server for grunt and tests
 
 `npm install http-server -g`
-####mocha
+#### mocha
 a test-framework
 
 `$ npm install --global mocha`
-####npm-dependencies
+#### npm-dependencies
 installing dependencies as specified in package.json
 
 `npm install`
 
-##important Commands
+## important Commands
 `grunt watch`
 
 starts different watchers looking for changes in js/img/scss/tests and kicking off appropriate taks like bundling, minifing, testing, copying,
