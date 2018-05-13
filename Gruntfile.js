@@ -17,12 +17,23 @@ module.exports = function(grunt) {
                 styles:'<%= src.base %>/styles/',
                 templates:'<%= src.base %>/templates/'
             },
-            //vars prod
-            prod:{
+            //vars build
+            build:{
+                base:'_static',
+                js:'<%= build.base %>/js/',
+                img:'<%= build.base %>/img/',
+                styles:'<%= build.base %>/css/'
+
             },
             //vars dev
             dev:{
-                base:'app'
+                base:'app',
+                js:'<%= dev.base %>/js/',
+                img:'<%= dev.base %>/img/',
+                styles:'<%= dev.base %>/css/'
+            },
+            //vars prod
+            prod:{
             },
         }
     });

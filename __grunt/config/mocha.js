@@ -1,22 +1,13 @@
 module.exports = {
 
-    server: {
+    test: {
         options: {
-            port: 3030, // custom port
-            base: './app', // current directory for 'index.html' is root
-            keepalive: true, // keep the server alive indefinitely
-        }
-    },
-    mochaFrontendTest: {
-        options: {
-            port: 2342, // custom port
-            base: './_src/tests', // current directory for 'index.html' is root
-            keepalive: true, // keep the server alive indefinitely
-            open: {
-                target: 'http://localhost:2342/ocr-frontend-mocha.html',
-            }
-        }
-        }
+            urls: [ 'http://localhost:2342/_src/tests/ocr-frontend-mocha.html' ],
+            timeout: 5000,
+            growlOnSuccess: false,
+            reporter: 'Spec'
+        },
+        dest: './_src/tests/output/Spec.out'
     }
 
-}
+};

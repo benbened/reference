@@ -1,11 +1,12 @@
 module.exports = {
         options: {
 
-            files: ['_src/tests/*.js']
+            files: ['<%= src.tests %>/*.js']
         },
         spec: {
             options: {
-                reporter: 'spec'
+                reporter: 'spec',
+                //save: '<%= src.tests %>output/mochacli.out'
             }
         }
 }
