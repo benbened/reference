@@ -45,12 +45,14 @@ CSS-preprocessor using ruby
 a lightweight http-server for grunt and tests
 
 `npm install http-server -g`
+####mocha
+a test-framework
+
+`$ npm install --global mocha`
 ####npm-dependencies
 installing dependencies as specified in package.json
 
 `npm install`
-####install.bat
-**A simple install-script for anything but node.js/npm and ruby for windows**
 
 ##important Commands
 `grunt watch`
