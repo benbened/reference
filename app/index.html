@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<main role="main" class=".container-fluid">
+    <div class="contentwrapper">
+
+        <div class="col">
+            <h1>Beispielarbeiten</h1>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>BankOCR</h2>
+                    <p class="lead">Hier die passende Datei auswählen und <b>Konvertieren</b> klicken um die OCR-Funktion zu testen</p>
+                    <input type="file" id="myFile" class="col-sm mb-sm-2">
+                    <button class="btn btn-primary js-action-loadfile col-sm mb-sm-2">Konvertieren</button>
+                    <pre class="col-sm js-ui-outputFileValue col-xs"></pre>
+
+                </div>
+                <div class="col-sm-6">
+                    <h2>Römische Zahlen</h2>
+                    <p class="lead">Im Eingabefeld eine römische Zahl eingeben und <b>Konvertieren</b> klicken um das Ergebnis zu testen</p>
+
+                    <p>Es gelten die Regeln der Verkürzung:<br>
+                        IIII-&gt;IV<br>
+                        VIIII-&gt;IX<br>
+                        XXXX-&gt;XL<br>
+                        LXXXX-&gt;XC<br>
+                        CCCC-&gt;CD<br>
+                        DCCCC-&gt;CM
+                    </p>
+                    <input type="text" id="myRoman" class="col-sm mb-sm-2 js-input-roman">
+                    <button class="btn btn-primary js-action-convertRoman col-sm mb-sm-2">Konvertieren</button>
+                    <pre class="col-sm js-ui-outputRoman col-xs"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+$pad-xs:3px;
+$pad-sm:7px;
+$pad-md:14px;
+$pad-lg:28px;
+
+
+main{
+  .contentwrapper{
+    padding:$pad-lg;
+  }
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.mb-{
+  &xs{
+    margin-bottom: $pad-xs;
+  }
+  &sm{
+    margin-bottom: $pad-sm;
+  }
+  &md{
+    margin-bottom: $pad-md;
+  }
+  pre{
+    width: 100%;
+    resize: vertical;
+    overflow: auto;
+
+  }
+}

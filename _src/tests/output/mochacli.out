@@ -1,0 +1,40 @@
+
+
+  BankOCR
+    √  File should exist
+
+  #recognizeSymbol()
+    √ get correct symbols from simplified matrix
+    √ get correct response for unknown Symbols from simplified matrix
+
+  #cutSymbol()
+    √ cut symbol from line
+
+  #getFile()
+    √ get fully valid file
+    √ get pretty valid file
+    √ get faulty file
+
+  #readFromFile()
+    √ read valid file
+    √ read mostly valid file
+    √ read faulty file
+
+  #verifyLines()
+    √ testing valid lines
+    √ testing pretty valid lines
+    √ testing invalid line
+
+  RomanNumeralsConverter
+    √  File should exist
+
+  #convertRomanToDecimal()
+    √ convert function should take roman value and convert to decimal value
+
+  #convertVerifiedRomanToDecimal()
+    √ validate for correct digits
+    √ validate for shortness
+    √ validate for correct range
+
+
+  18 passing (28ms)

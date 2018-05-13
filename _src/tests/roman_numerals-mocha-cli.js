@@ -3,13 +3,13 @@
 var expect = require('chai').expect;
 describe('RomanNumeralsConverter', function() {
     it(' File should exist', function() {
-        var ROMANNUMERALS = require('../js/roman_numerals.js');
+        var ROMANNUMERALS = require('../js/modules/roman_numerals.js');
         expect(ROMANNUMERALS).to.not.be.undefined;
     });
 });
 describe('#convertRomanToDecimal()',function(){
     it('convert function should take roman value and convert to decimal value',function() {
-        var ROMANNUMERALS = require('../js/roman_numerals.js');
+        var ROMANNUMERALS = require('../js/modules/roman_numerals.js');
 
         var input = 'I';
         var expected = '1';
@@ -55,7 +55,7 @@ describe('#convertRomanToDecimal()',function(){
 });
 describe('#convertVerifiedRomanToDecimal()',function(){
     it('validate for correct digits',function() {
-        var ROMANNUMERALS = require('../js/roman_numerals.js');
+        var ROMANNUMERALS = require('../js/modules/roman_numerals.js');
 
         var input = 'MMMCDXL IV';
         var expected = false;
@@ -81,12 +81,9 @@ describe('#convertVerifiedRomanToDecimal()',function(){
         var expected = false;
         var actual = ROMANNUMERALS.convertVerifiedRomanToDecimal(input);
         expect(actual).to.equal(expected);
-    })
-});
-
-describe('#convertVerifiedRomanToDecimal()',function(){
+    });
     it('validate for shortness',function() {
-        var ROMANNUMERALS = require('../js/roman_numerals.js');
+        var ROMANNUMERALS = require('../js/modules/roman_numerals.js');
         var input = 'I';
         var expected = '1';
         var actual = ROMANNUMERALS.convertVerifiedRomanToDecimal(input);
@@ -119,11 +116,38 @@ describe('#convertVerifiedRomanToDecimal()',function(){
         var expected = false;
         var actual = ROMANNUMERALS.convertVerifiedRomanToDecimal(input);
         expect(actual).to.equal(expected);
-    })
-});
-describe('#convertVerifiedRomanToDecimal()',function(){
+
+        var input = 'vv';
+        var expected = false;
+        var actual = ROMANNUMERALS.convertVerifiedRomanToDecimal(input);
+        expect(actual).to.equal(expected);
+        var input = 'll';
+        var expected = false;
+        var actual = ROMANNUMERALS.convertVerifiedRomanToDecimal(input);
+        expect(actual).to.equal(expected);
+        var input = 'dd';
+        var expected = false;
+        var actual = ROMANNUMERALS.convertVerifiedRomanToDecimal(input);
+        expect(actual).to.equal(expected);
+        var input = 'mmmm';
+        var expected = false;
+        var actual = ROMANNUMERALS.convertVerifiedRomanToDecimal(input);
+        expect(actual).to.equal(expected);
+        var input = 'cccc';
+        var expected = false;
+        var actual = ROMANNUMERALS.convertVerifiedRomanToDecimal(input);
+        expect(actual).to.equal(expected);
+        var input = 'xxxx';
+        var expected = false;
+        var actual = ROMANNUMERALS.convertVerifiedRomanToDecimal(input);
+        expect(actual).to.equal(expected);;
+        var input = 'iiii';
+        var expected = false;
+        var actual = ROMANNUMERALS.convertVerifiedRomanToDecimal(input);
+        expect(actual).to.equal(expected);
+    });
     it('validate for correct range',function() {
-        var ROMANNUMERALS = require('../js/roman_numerals.js');
+        var ROMANNUMERALS = require('../js/modules/roman_numerals.js');
 
         var input = 'iL';
         var expected = false;

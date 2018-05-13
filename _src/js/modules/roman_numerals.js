@@ -46,7 +46,7 @@ ROMANNUMERALS={
         if(romNum.match(/[^ivxlcdm]+/gi)){
             return false;
         }
-        if(romNum.match(/ivi|ixi|xlx|xcx|cdc|cmc|il|ic|id|im|vx|vc|vd|vm|xd|xm|lc|ld|lm|dm/gi)){
+        if(romNum.match(/ivi|ixi|xlx|xcx|cdc|cmc|il|ic|id|im|vx|vc|vd|vm|xd|xm|lc|ld|lm|dm|vv|ll|dd|mmmm|cccc|xxxx|iiii/gi)){
             return false;
         }
         return ROMANNUMERALS.convertRomanToDecimal(romNum);
